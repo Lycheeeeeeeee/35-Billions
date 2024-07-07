@@ -1,0 +1,2 @@
+,weighted_mcc,weighted_logloss,weighted_bs,mcc,logloss,brier_score_loss,tn,fp,fn,tp,fpr,fnr,train_tn,train_fp,train_fn,train_tp,train_fpr,train_fnr,total_loss,fp_loss,fn_loss
+0,0.9987984204764139,,,0.6119421189420815,0.683758135350375,0.07282965465999734,92.0,121.0,5.0,1498.0,0.568075117370892,0.00332667997338656,409.0,444.0,0.0,6010.0,0.5205158264947245,0.0,411.0,144.0,267.0

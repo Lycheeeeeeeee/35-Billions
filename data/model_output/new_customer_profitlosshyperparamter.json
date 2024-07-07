@@ -1,0 +1,1 @@
+{"max_depth": 12, "num_leaves": 48, "lambda_l1": 0.00011548574578690704, "lambda_l2": 1.3199945533897172e-06, "feature_fraction": 0.88, "bagging_fraction": 0.5492535456145099, "bagging_freq": 2, "min_child_samples": 10, "min_sum_hessian_in_leaf": 0.3997574962009172}
