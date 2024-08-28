@@ -1,0 +1,5 @@
+fastapi
+uvicorn
+pandas==2.2.1
+joblib
+lightgbm==4.4.0
