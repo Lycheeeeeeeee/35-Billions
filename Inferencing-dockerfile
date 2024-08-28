@@ -1,0 +1,38 @@
+# Use an official Python runtime as the base image
+FROM python:3.11-slim-bullseye
+
+# Set the working directory in the container
+WORKDIR /app
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    build-essential \
+    cmake \
+    git \
+    libomp-dev \
+    && rm -rf /var/lib/apt/lists/*
+    
+# Copy the requirements file into the container
+COPY inferencing/requirements.txt .
+
+# Install the Python dependencies
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy the application code and model into the container
+COPY inferencing/ .
+COPY src/ ./src/
+COPY model/ ./model/
+COPY data/ ./data/
+
+# Set the Python path to include the current directory
+ENV PYTHONPATH=/app:$PYTHONPATH
+
+# Set the environment variable for the model file
+ENV MODEL_FILE=/app/model/existing_customer_profitloss_classifier.joblib
+
+ENV DATA_DICTIONARY_PATH=/app/data/fundtap-data-dictionary.csv
+
+# Expose the port that FastAPI will run on
+EXPOSE 8080
+
+# Command to run the FastAPI application
+CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "8080"]
