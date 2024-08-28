@@ -1,0 +1,98 @@
+// //performance is really good 
+// Model Performance Analysis:
+// False Positive Rate (FPR): 0.2647
+// False Negative Rate (FNR): 0.0366
+// Total Money Lost: $57905.00
+// Money Lost due to False Positives: $56052.00
+// Money Lost due to False Negatives: $1853.00
+
+// Overfitting Analysis:
+// Train Accuracy: 0.9517
+// Test Accuracy: 0.9489
+// Good news: The model doesn't seem to be overfitting.
+{"num_leaves": 12, "lambda_l1": 0.0017692681923893764, "lambda_l2": 9.283754008004793, "feature_fraction": 0.16140373016587717, "bagging_fraction": 0.41507845282465317, "bagging_freq": 1, "min_child_samples": 57, "min_sum_hessian_in_leaf": 5.515819252711379}
+
+
+
+
+
+Model Performance Analysis:
+False Positive Rate (FPR): 0.2353
+False Negative Rate (FNR): 0.0333
+Total Money Lost: $57132.00
+Money Lost due to False Positives: $55477.00
+Money Lost due to False Negatives: $1655.00
+
+Overfitting Analysis:
+Train Accuracy: 0.9612
+Test Accuracy: 0.9539
+Good news: The model doesn't seem to be overfitting.
+
+{"num_leaves": 40, "lambda_l1": 1.779572758948942e-07, "lambda_l2": 0.0006577470283263627, "feature_fraction": 0.4616161608187719, "bagging_fraction": 0.45282306465679056, "bagging_freq": 3, "min_child_samples": 100, "min_sum_hessian_in_leaf": 4.921968298919482}
+
+
+
+Model Performance Analysis:
+False Positive Rate (FPR): 0.1765
+False Negative Rate (FNR): 0.0173
+Total Money Lost: $48522.00
+Money Lost due to False Positives: $47242.00
+Money Lost due to False Negatives: $1280.00
+
+Overfitting Analysis:
+Train Accuracy: 0.9808
+Test Accuracy: 0.9726
+Good news: The model doesn't seem to be overfitting.
+
+
+{"num_leaves": 60, "lambda_l1": 2.661972156884598e-06, "lambda_l2": 0.12960389955773943, "feature_fraction": 0.3677231184165374, "bagging_fraction": 0.809817388954816, "bagging_freq": 4, "min_child_samples": 67, "min_sum_hessian_in_leaf": 7.685522594638048}
+
+
+Model Performance Analysis:
+False Positive Rate (FPR): 0.1961
+False Negative Rate (FNR): 0.0173
+Total Money Lost: $48627.00
+Money Lost due to False Positives: $47361.00
+Money Lost due to False Negatives: $1266.00
+
+Overfitting Analysis:
+Train Accuracy: 0.9786
+Test Accuracy: 0.9713
+Good news: The model doesn't seem to be overfitting.
+
+{"num_leaves": 64, "lambda_l1": 7.127248715490789, "lambda_l2": 3.1483667324572333, "feature_fraction": 0.17210661998465876, "bagging_fraction": 0.8647749789000312, "bagging_freq": 14, "min_child_samples": 48, "min_sum_hessian_in_leaf": 2.863266103255799}
+
+
+
+
+Model Performance Analysis:
+False Positive Rate (FPR): 0.6291
+False Negative Rate (FNR): 0.0160
+Total Money Lost: $46134.00
+Money Lost due to False Positives: $44144.00
+Money Lost due to False Negatives: $1990.00
+
+Overfitting Analysis:
+Train Accuracy: 0.9204
+Test Accuracy: 0.9079
+Good news: The model doesn't seem to be overfitting.
+[LightGBM] [Info] Number of positive: 7513, number of negative: 1066
+{"num_leaves": 80, "lambda_l1": 7.562847862720608e-05, "lambda_l2": 0.0019384230094152092, "feature_fraction": 0.947915193119744, "bagging_fraction": 0.7280590394239538, "bagging_freq": 5, "min_child_samples": 96, "min_sum_hessian_in_leaf": 9.580509764946964}
+
+
+
+*** Use the quote amount as the weight instead of the fundtapprofitloss
+Model Performance Analysis:
+False Positive Rate (FPR): 0.2745
+False Negative Rate (FNR): 0.0113
+Weighted_mcc: 0.7490
+Total Money Lost: $108877.36
+SUM OF WEIGHT: Money funded False Positives (unprofitable quote predicted as profitable): $85766.50
+SUM OF WEIGHT: Money did not fund due to False Negatives (profitable quote predicted as non-profitable): $23110.86
+
+Overfitting Analysis:
+Train Accuracy: 0.9847
+Test Accuracy: 0.9720
+Good news: The model doesn't seem to be overfitting.
+
+{"num_leaves": 91, "lambda_l1": 9.926003135087209, "lambda_l2": 8.233913315406651, "feature_fraction": 0.11899596212065212, "bagging_fraction": 0.5907153247574968, "bagging_freq": 7, "min_child_samples": 28, "min_sum_hessian_in_leaf": 9.905100103257436}
